@@ -1,0 +1,25 @@
+page-defaultfloor {
+    ion-select{
+        max-width: 100% !important;
+    }
+
+    .div.container {
+        min-height: 100%;
+        vertical-align: middle
+    }
+
+    // .center {
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     width: 50%;
+    // }
+
+    .centerV {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 50%;
+    }
+   
+}

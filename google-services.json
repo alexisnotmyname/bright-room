@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "870004644864",
+    "firebase_url": "https://brightroom-5bb4d.firebaseio.com",
+    "project_id": "brightroom-5bb4d",
+    "storage_bucket": "brightroom-5bb4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870004644864:android:d561ecbdab2def2f",
+        "android_client_info": {
+          "package_name": "com.globe.brightroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870004644864-5hh483iv7n2plhku3ub88va0935lfad0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.globe.brightroom",
+            "certificate_hash": "600024c83f995e1841e3de87e0bcf8a7f5b5e5e2"
+          }
+        },
+        {
+          "client_id": "870004644864-qntp6hj38seui6l7l22feglb41v6kfpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIxh_ckggxsWw1ziZRi4YQDJO6GhbEFUk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870004644864-qntp6hj38seui6l7l22feglb41v6kfpj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "870004644864-t44mbsdjf31g88eeuf13h17960e1d6fa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "asdfasdf"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

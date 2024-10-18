@@ -1,0 +1,24 @@
+timer {
+    .timer-button {
+        font-size: 5rem !important;
+        height: 1em !important;
+      }
+      
+      .no-bottom-border.item .item-inner {
+          border-bottom: none !important;
+      }
+
+      .roomview-timer-section {
+        position: relative;
+        text-align: center;
+        display:block;
+        margin:auto;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

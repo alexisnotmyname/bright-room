@@ -1,0 +1,45 @@
+page-view-room {
+    .roomview-num-section {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        text-align: center;
+    }
+
+    .roomview-num-section h1{
+        // font-size: 2.5em;
+        margin-top: 0px;    
+    }
+
+    .roomview-num-section p{
+        margin-bottom: 0px;
+    }
+
+    .roomview-avail {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .roomview-timer-section {
+        position: relative;
+        text-align: center;
+        display:block;
+        margin:auto;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        color: #27a3c9;
+    }
+
+}

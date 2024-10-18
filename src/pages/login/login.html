@@ -1,0 +1,23 @@
+<ion-header>
+    <!-- <ion-navbar>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Log in</ion-title>
+    </ion-navbar> -->
+</ion-header>
+
+
+<ion-content padding text-center center>
+    <ion-grid style="height: 100%">
+        <ion-row justify-content-center align-items-center style="height: 100%">
+            <div style="width: 100%">            
+                <img class="img" src="assets/imgs/brightRoom-logo.png"/>
+                <button ion-button (click)="loginWithGoogle()" ion-button block round class="brBtn">
+                    <ion-icon name="logo-google"></ion-icon>
+                    Login Globe Account
+                </button>
+            </div>
+        </ion-row>
+    </ion-grid>
+</ion-content>

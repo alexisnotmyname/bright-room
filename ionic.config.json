@@ -1,0 +1,7 @@
+{
+  "name": "BrightRoom",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

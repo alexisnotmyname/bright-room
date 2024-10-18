@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title  *ngIf="userProfile">
+      Hi, {{ userProfile.displayName }}
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only outline icon-end clear (click)="logout()">
+            <ion-icon name="md-exit"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-style">
+  <div class="floor-select">
+    <p>You are currently in</p>
+    <div>
+      <button ion-button outline icon-end clear large (click)="presentModal()">
+        <b>{{currentFloorSelected | ordinal}} Floor</b>
+        <ion-icon name='ios-arrow-down-outline'></ion-icon>
+      </button>
+    </div>
+  </div>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Reloading...">
+      
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-grid class="home-gallery">
+    <ion-row>
+      <ion-col col-6 *ngFor="let room of roomsData"> 
+          <div class="card" (click)="pushViewRoom(room)" [ngClass]="{mine : room.reservation?.employeeId==userProfile.email, 
+                                                                      notmine: room.reservation?.employeeId!=userProfile.email}">
+            <div class="container">
+              <p>{{room.location}}</p>
+              <div style="margin: 5px">
+                  <b style="font-size:6vw">{{room.roomId}}</b>
+              </div>
+              <div *ngIf="room.status == '0'">
+                <img src="assets/imgs/green.png"/>
+                <b style="font-size:3.5vw">Available</b>
+                <!-- <p><br></p> -->
+                <p><br></p>
+              </div>
+              <div *ngIf="room.status == '1'">
+                  <img src="assets/imgs/red.png"/>
+                  <b>Reserved</b>
+                  <!-- <p>{{room.reservation.timeRemaining}} mins</p> -->
+                  <p class="cut">{{room.reservation.employeeId}}</p>
+              </div>
+              <div *ngIf="room.status == '2'">
+                  <img src="assets/imgs/red.png"/>
+                  <b>Checked-in</b>
+                  <!-- <p>{{room.reservation.timeRemaining}} mins</p> -->
+                  <p class="cut">{{room.reservation.employeeId}}</p>
+              </div>
+              <!-- <ng-template #booked>
+                <img src="assets/imgs/red.png"/>
+                <b>Booked</b>
+                <p>{{room.reservation.timeRemaining}} mins</p>
+                <p class="cut">{{room.reservation.employeeId}}</p>
+              </ng-template> -->
+            </div>
+          </div>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
